@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* FUENTES */
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.updock {
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.dm-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.active {
+  border-bottom: 4px solid rgba(202, 192, 182);
+  transform: scale(1.1);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #e0d7d2;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+header .headerTop {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.headerTop .insideHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.insideHeader h1 {
+  cursor: pointer;
+}
+.headerTop h1 {
+  grid-column: 2/3;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  grid-column: 3/4;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.icons img:hover {
+  transform: translateY(-10px);
+  transition: ease-in-out 0.3s;
+}
+header .headerBottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.headerBottom nav {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  width: 60%;
+  border-top: 1px solid black;
+}
+.headerBottom nav a {
+  padding: 20px;
+}
+
+.headerBottom nav a:hover {
+  border-bottom: 4px solid rgba(202, 192, 182);
+  transform: scale(1.1);
+}
+.headerBottom nav a:hover > span {
+  border-bottom: 2px solid black;
+}
+main {
+  flex: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.formularioYMapa {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.formulario {
+  width: calc(100% / 3);
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+.formulario form input {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #e0d7d2;
+  outline: none;
+  border: 1px solid #b6aba6;
+  font-size: 15px;
+}
+.formulario form input:focus {
+  border: 2px solid black;
+  background-color: #ccc0ba;
+}
+.formulario form textarea {
+  resize: none;
+}
+
+.nombreApellidos {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.nombreApellidos input {
+  width: 100%;
+}
+#name {
+  background-image: url(img/icon/contact.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+  padding-left: 50px;
+}
+#mail {
+  background-image: url(img/icon/correo.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+  padding-left: 50px;
+}
+#tlf {
+  background-image: url(img/icon/telefono.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+  padding-left: 50px;
+}
+#mensaje {
+  background-color: #e0d7d2;
+  font-size: 15px;
+}
+#enviar {
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#enviar:hover {
+  cursor: pointer;
+
+  background-color: #ccc0ba;
+}
+
+.mapContainer {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  align-items: center;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+footer {
+  background-color: #e0d7d2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.footer-info p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.footer-content .icons {
+  align-items: center;
+}

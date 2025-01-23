@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciel et Terre</title>
+    <link rel="stylesheet" href="contacto.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Montserrat, Noto Sans, and Updock fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Updock&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Concert One, DM Serif Text and Oswald fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+
+  <body>
+    <header class="noto-sans" id="header">
+      <div class="headerTop dm-italic">
+        <div class="insideHeader">
+          <h1
+            style="font-size: 40px; letter-spacing: 2px"
+            onclick="window.location.href='index.html';"
+          >
+            Ciel et Terre
+          </h1>
+          <div class="icons">
+            <img src="img/icon/instagram.png" alt="instagram" />
+            <img src="img/icon/facebook.png" alt="facebook" />
+            <img src="img/icon/tripadvisor.webp" alt="tripadvisor" />
+          </div>
+        </div>
+      </div>
+
+      <div class="headerBottom oswald">
+        <nav>
+          <a href="index.html"><span>INICIO</span></a>
+          <a href="menu.html"><span>MENÚ</span></a>
+          <a href=""><span>BEBIDAS</span></a>
+          <a href=""><span>RESERVA</span></a>
+          <a href="#" class="active"><span>CONTACTO</span></a>
+        </nav>
+      </div>
+    </header>
+    <main class="montserrat">
+      <h1 class="updock">Contáctanos</h1>
+
+      <p>
+        No dude en enviarnos sus consultas a través de este formulario de
+        contacto.
+      </p>
+      <p>Le responderemos a la mayor brevedad posible.</p>
+      <br />
+      <div class="formularioYMapa">
+        <div class="formulario">
+          <form action="">
+            <div class="nombreApellidos">
+              <input
+                type="text"
+                name=""
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                name=""
+                id="surname"
+                placeholder="Surname"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              name=""
+              id="mail"
+              placeholder="ejemplo@gmail.com"
+              required
+            />
+            <input
+              type="tel"
+              name=""
+              id="tlf"
+              placeholder="Telf number"
+              required
+            />
+            <textarea
+              name=""
+              id="mensaje"
+              rows="13"
+              placeholder="Escribe aquí tu mensaje"
+            ></textarea>
+            <input type="submit" name="Enviar" id="enviar" />
+          </form>
+        </div>
+        <div class="mapContainer">
+          <div id="map"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content montserrat">
+        <div class="footer-info">
+          <p>Ciel et Terre</p>
+          <p>123 Calle Principal ( Tavera ),Córcega, Francia</p>
+          <p>Tel: +123 456 7890</p>
+          <br />
+          <p>Made by <strong>Daniel Recouso Varela</strong></p>
+        </div>
+        <div class="icons">
+          <img src="img/icon/instagram.png" alt="instagram" />
+          <img src="img/icon/facebook.png" alt="facebook" />
+          <img src="img/icon/tripadvisor.webp" alt="tripadvisor" />
+        </div>
+      </div>
+    </footer>
+    <script src="js/contacto.js"></script>
+  </body>
+</html>
